@@ -1,0 +1,309 @@
+{
+  "primary_summary": [
+    {
+      "moment": "after_first_semester",
+      "model": "catboost",
+      "folds": 25,
+      "macro_f1": 0.6625495406333249,
+      "macro_f1_sd": 0.013710074803682021,
+      "balanced_accuracy": 0.6548533542624626,
+      "multiclass_log_loss": 0.6072679450576087,
+      "dropout_ap_from_multiclass": 0.8629399312308351,
+      "mean_runtime_seconds": 13.116833080120013,
+      "model_label": "CatBoost"
+    },
+    {
+      "moment": "after_first_semester",
+      "model": "histgb",
+      "folds": 25,
+      "macro_f1": 0.6674982398319588,
+      "macro_f1_sd": 0.016866982977465878,
+      "balanced_accuracy": 0.6602580372889493,
+      "multiclass_log_loss": 0.6173882665475551,
+      "dropout_ap_from_multiclass": 0.8585672826135999,
+      "mean_runtime_seconds": 0.8156038678400092,
+      "model_label": "HistGradientBoosting"
+    },
+    {
+      "moment": "after_first_semester",
+      "model": "logistic",
+      "folds": 25,
+      "macro_f1": 0.6665234889421277,
+      "macro_f1_sd": 0.011960993622504221,
+      "balanced_accuracy": 0.6589812210007358,
+      "multiclass_log_loss": 0.6228109011732659,
+      "dropout_ap_from_multiclass": 0.8626815580235763,
+      "mean_runtime_seconds": 11.171938170360063,
+      "model_label": "Logistic regression"
+    },
+    {
+      "moment": "after_first_semester",
+      "model": "tabpfn_1",
+      "folds": 25,
+      "macro_f1": 0.6802879821966218,
+      "macro_f1_sd": 0.015036213506135569,
+      "balanced_accuracy": 0.671925395285798,
+      "multiclass_log_loss": 0.5867688092496488,
+      "dropout_ap_from_multiclass": 0.8693593812412911,
+      "mean_runtime_seconds": 22.05871773940001,
+      "model_label": "TabPFN (1 estimator)"
+    },
+    {
+      "moment": "registration",
+      "model": "catboost",
+      "folds": 25,
+      "macro_f1": 0.5393781963960715,
+      "macro_f1_sd": 0.014936963815745379,
+      "balanced_accuracy": 0.5436333257676083,
+      "multiclass_log_loss": 0.7814809373520072,
+      "dropout_ap_from_multiclass": 0.7489553216175158,
+      "mean_runtime_seconds": 12.731387624919998,
+      "model_label": "CatBoost"
+    },
+    {
+      "moment": "registration",
+      "model": "histgb",
+      "folds": 25,
+      "macro_f1": 0.5497438132596063,
+      "macro_f1_sd": 0.014550291733834583,
+      "balanced_accuracy": 0.5479805642848935,
+      "multiclass_log_loss": 0.7948941175363545,
+      "dropout_ap_from_multiclass": 0.7394206498145656,
+      "mean_runtime_seconds": 0.7712131877999855,
+      "model_label": "HistGradientBoosting"
+    },
+    {
+      "moment": "registration",
+      "model": "logistic",
+      "folds": 25,
+      "macro_f1": 0.54084505393345,
+      "macro_f1_sd": 0.013485629629353445,
+      "balanced_accuracy": 0.5420649603141724,
+      "multiclass_log_loss": 0.8054180815324148,
+      "dropout_ap_from_multiclass": 0.7386184618367209,
+      "mean_runtime_seconds": 11.827197276839998,
+      "model_label": "Logistic regression"
+    },
+    {
+      "moment": "registration",
+      "model": "tabpfn_1",
+      "folds": 25,
+      "macro_f1": 0.52950687730797,
+      "macro_f1_sd": 0.015400162122411626,
+      "balanced_accuracy": 0.5385561441542499,
+      "multiclass_log_loss": 0.7798938978243531,
+      "dropout_ap_from_multiclass": 0.7536831600453259,
+      "mean_runtime_seconds": 17.4499586422,
+      "model_label": "TabPFN (1 estimator)"
+    }
+  ],
+  "macro_f1_checkpoint_effects": [
+    {
+      "comparison_type": "checkpoint_effect",
+      "moment": "after_first_semester_vs_registration",
+      "metric": "macro_f1",
+      "first": "after_first_semester",
+      "second": "registration",
+      "mean_difference": 0.1256784350086777,
+      "ci_low": 0.1117241586044014,
+      "ci_high": 0.139632711412954,
+      "folds_favoring_first": 1.0,
+      "n_paired_folds": 25,
+      "model": "logistic"
+    },
+    {
+      "comparison_type": "checkpoint_effect",
+      "moment": "after_first_semester_vs_registration",
+      "metric": "macro_f1",
+      "first": "after_first_semester",
+      "second": "registration",
+      "mean_difference": 0.1231713442372534,
+      "ci_low": 0.1014920344293821,
+      "ci_high": 0.1448506540451248,
+      "folds_favoring_first": 1.0,
+      "n_paired_folds": 25,
+      "model": "catboost"
+    },
+    {
+      "comparison_type": "checkpoint_effect",
+      "moment": "after_first_semester_vs_registration",
+      "metric": "macro_f1",
+      "first": "after_first_semester",
+      "second": "registration",
+      "mean_difference": 0.1177544265723524,
+      "ci_low": 0.0962103704989902,
+      "ci_high": 0.1392984826457146,
+      "folds_favoring_first": 1.0,
+      "n_paired_folds": 25,
+      "model": "histgb"
+    },
+    {
+      "comparison_type": "checkpoint_effect",
+      "moment": "after_first_semester_vs_registration",
+      "metric": "macro_f1",
+      "first": "after_first_semester",
+      "second": "registration",
+      "mean_difference": 0.1507811048886518,
+      "ci_low": 0.1325191421016676,
+      "ci_high": 0.169043067675636,
+      "folds_favoring_first": 1.0,
+      "n_paired_folds": 25,
+      "model": "tabpfn_1"
+    }
+  ],
+  "macro_f1_model_effects": [
+    {
+      "comparison_type": "model_effect_vs_logistic",
+      "moment": "registration",
+      "metric": "macro_f1",
+      "first": "catboost",
+      "second": "logistic",
+      "mean_difference": -0.0014668575373784,
+      "ci_low": -0.0193748416750001,
+      "ci_high": 0.0164411266002433,
+      "folds_favoring_first": 0.48,
+      "n_paired_folds": 25,
+      "model": NaN
+    },
+    {
+      "comparison_type": "model_effect_vs_logistic",
+      "moment": "registration",
+      "metric": "macro_f1",
+      "first": "histgb",
+      "second": "logistic",
+      "mean_difference": 0.0088987593261563,
+      "ci_low": -0.0058366616081468,
+      "ci_high": 0.0236341802604596,
+      "folds_favoring_first": 0.84,
+      "n_paired_folds": 25,
+      "model": NaN
+    },
+    {
+      "comparison_type": "model_effect_vs_logistic",
+      "moment": "registration",
+      "metric": "macro_f1",
+      "first": "tabpfn_1",
+      "second": "logistic",
+      "mean_difference": -0.01133817662548,
+      "ci_low": -0.0303876663195756,
+      "ci_high": 0.0077113130686156,
+      "folds_favoring_first": 0.24,
+      "n_paired_folds": 25,
+      "model": NaN
+    },
+    {
+      "comparison_type": "model_effect_vs_logistic",
+      "moment": "after_first_semester",
+      "metric": "macro_f1",
+      "first": "catboost",
+      "second": "logistic",
+      "mean_difference": -0.0039739483088026,
+      "ci_low": -0.0213049213431801,
+      "ci_high": 0.0133570247255747,
+      "folds_favoring_first": 0.32,
+      "n_paired_folds": 25,
+      "model": NaN
+    },
+    {
+      "comparison_type": "model_effect_vs_logistic",
+      "moment": "after_first_semester",
+      "metric": "macro_f1",
+      "first": "histgb",
+      "second": "logistic",
+      "mean_difference": 0.000974750889831,
+      "ci_low": -0.015795619055607,
+      "ci_high": 0.0177451208352692,
+      "folds_favoring_first": 0.64,
+      "n_paired_folds": 25,
+      "model": NaN
+    },
+    {
+      "comparison_type": "model_effect_vs_logistic",
+      "moment": "after_first_semester",
+      "metric": "macro_f1",
+      "first": "tabpfn_1",
+      "second": "logistic",
+      "mean_difference": 0.0137644932544941,
+      "ci_low": -0.0018973506553544,
+      "ci_high": 0.0294263371643426,
+      "folds_favoring_first": 0.8,
+      "n_paired_folds": 25,
+      "model": NaN
+    }
+  ],
+  "queue_20pct": [
+    {
+      "moment": "after_first_semester",
+      "model": "logistic_binary",
+      "folds": 5,
+      "mean_selected_records": 177.0,
+      "mean_dropout_labels_in_test_fold": 284.2,
+      "mean_dropout_labels_reached": 162.8,
+      "queue_recall": 0.5728391401037806,
+      "selected_share_with_dropout_label": 0.9197740112994349,
+      "dropout_ap": 0.8592148107133777,
+      "dropout_roc_auc": 0.904751487033732,
+      "dropout_brier": 0.10400510908268665,
+      "model_label": "Binary logistic regression"
+    },
+    {
+      "moment": "after_first_semester",
+      "model": "tabpfn_1_binary",
+      "folds": 5,
+      "mean_selected_records": 177.0,
+      "mean_dropout_labels_in_test_fold": 284.2,
+      "mean_dropout_labels_reached": 163.8,
+      "queue_recall": 0.5763577958981962,
+      "selected_share_with_dropout_label": 0.9254237288135594,
+      "dropout_ap": 0.8663085909301319,
+      "dropout_roc_auc": 0.9079570261915559,
+      "dropout_brier": 0.10360092014354645,
+      "model_label": "Binary TabPFN (1 estimator)"
+    },
+    {
+      "moment": "registration",
+      "model": "logistic_binary",
+      "folds": 5,
+      "mean_selected_records": 177.0,
+      "mean_dropout_labels_in_test_fold": 284.2,
+      "mean_dropout_labels_reached": 136.8,
+      "queue_recall": 0.48134667655053126,
+      "selected_share_with_dropout_label": 0.7728813559322034,
+      "dropout_ap": 0.7360750153954869,
+      "dropout_roc_auc": 0.823316209441996,
+      "dropout_brier": 0.14879533437307915,
+      "model_label": "Binary logistic regression"
+    },
+    {
+      "moment": "registration",
+      "model": "tabpfn_1_binary",
+      "folds": 5,
+      "mean_selected_records": 177.0,
+      "mean_dropout_labels_in_test_fold": 284.2,
+      "mean_dropout_labels_reached": 136.6,
+      "queue_recall": 0.4806399802322708,
+      "selected_share_with_dropout_label": 0.7717514124293785,
+      "dropout_ap": 0.7447689835417037,
+      "dropout_roc_auc": 0.8288994503025391,
+      "dropout_brier": 0.14660906852801067,
+      "model_label": "Binary TabPFN (1 estimator)"
+    }
+  ],
+  "break_even_20pct": [
+    {
+      "model": "logistic_binary",
+      "capacity": 0.2,
+      "late_queue_recall": 0.5728391401037806,
+      "registration_queue_recall": 0.4813466765505312,
+      "early_effectiveness_break_even_ratio": 1.1900760263037664
+    },
+    {
+      "model": "tabpfn_1_binary",
+      "capacity": 0.2,
+      "late_queue_recall": 0.5763577958981962,
+      "registration_queue_recall": 0.4806399802322708,
+      "early_effectiveness_break_even_ratio": 1.1991465953782483
+    }
+  ],
+  "interpretation": "Break-even ratios are assumption thresholds, not estimated intervention effects. Corrected repeated-CV intervals remain approximate and do not establish external validity."
+}

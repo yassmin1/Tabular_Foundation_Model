@@ -1,0 +1,19 @@
+analysis,moment,model,macro_f1,folds,model_label
+primary_repeated_stratified_cv,after_first_semester,catboost,0.6625495406333249,25,CatBoost
+primary_repeated_stratified_cv,after_first_semester,histgb,0.6674982398319588,25,HistGradientBoosting
+primary_repeated_stratified_cv,after_first_semester,logistic,0.6665234889421277,25,Logistic regression
+primary_repeated_stratified_cv,after_first_semester,tabpfn_1,0.6802879821966218,25,TabPFN (1 estimator)
+primary_repeated_stratified_cv,registration,catboost,0.5393781963960715,25,CatBoost
+primary_repeated_stratified_cv,registration,histgb,0.5497438132596063,25,HistGradientBoosting
+primary_repeated_stratified_cv,registration,logistic,0.54084505393345,25,Logistic regression
+primary_repeated_stratified_cv,registration,tabpfn_1,0.52950687730797,25,TabPFN (1 estimator)
+proxy_cohort_group_cv,after_first_semester,logistic,0.6503332102827035,5,Logistic regression
+proxy_cohort_group_cv,after_first_semester,tabpfn_1,0.6613478331296513,5,TabPFN (1 estimator)
+proxy_cohort_group_cv,registration,logistic,0.5259669687606331,5,Logistic regression
+proxy_cohort_group_cv,registration,tabpfn_1,0.5068993263739289,5,TabPFN (1 estimator)
+registration_contract_ablation,registration_full,logistic,0.5366303572248314,5,Logistic regression
+registration_contract_ablation,registration_full,tabpfn_1,0.5297255621109468,5,TabPFN (1 estimator)
+registration_contract_ablation,registration_without_macro_or_payment,logistic,0.49605636822536087,5,Logistic regression
+registration_contract_ablation,registration_without_macro_or_payment,tabpfn_1,0.46488261479516363,5,TabPFN (1 estimator)
+registration_contract_ablation,registration_without_payment_scholarship,logistic,0.48963676543767376,5,Logistic regression
+registration_contract_ablation,registration_without_payment_scholarship,tabpfn_1,0.47479284488559925,5,TabPFN (1 estimator)

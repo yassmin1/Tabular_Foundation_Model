@@ -1,0 +1,27 @@
+{
+  "profile": "full",
+  "outer_splits": 5,
+  "outer_repeats": 5,
+  "primary_models": [
+    "logistic",
+    "catboost",
+    "histgb",
+    "tabpfn_1"
+  ],
+  "binary_models": [
+    "logistic_binary",
+    "tabpfn_1_binary"
+  ],
+  "binary_queue_outer_folds": 5,
+  "binary_queue_outer_repeats": 1,
+  "robustness_models": [
+    "logistic",
+    "tabpfn_1"
+  ],
+  "interpretation_limits": [
+    "Proxy cohorts are inferred, not verified enrollment cohorts.",
+    "Break-even outputs vary assumptions; they do not estimate treatment effects.",
+    "Dropout is a source-defined administrative label and can include transfers.",
+    "Repeated-CV corrected intervals are approximate, not external-validity intervals."
+  ]
+}

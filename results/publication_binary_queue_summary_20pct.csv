@@ -1,0 +1,5 @@
+moment,model,folds,mean_selected_records,mean_dropout_labels_in_test_fold,mean_dropout_labels_reached,queue_recall,selected_share_with_dropout_label,dropout_ap,dropout_roc_auc,dropout_brier,model_label
+after_first_semester,logistic_binary,5,177.0,284.2,162.8,0.5728391401037806,0.9197740112994349,0.8592148107133777,0.904751487033732,0.10400510908268665,Binary logistic regression
+after_first_semester,tabpfn_1_binary,5,177.0,284.2,163.8,0.5763577958981962,0.9254237288135594,0.8663085909301319,0.9079570261915559,0.10360092014354645,Binary TabPFN (1 estimator)
+registration,logistic_binary,5,177.0,284.2,136.8,0.48134667655053126,0.7728813559322034,0.7360750153954869,0.823316209441996,0.14879533437307915,Binary logistic regression
+registration,tabpfn_1_binary,5,177.0,284.2,136.6,0.4806399802322708,0.7717514124293785,0.7447689835417037,0.8288994503025391,0.14660906852801067,Binary TabPFN (1 estimator)
